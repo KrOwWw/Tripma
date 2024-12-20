@@ -1,18 +1,7 @@
-.button {
-  &-form {
-    border-radius: 100px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 150%;
-    text-align: center;
-    transition: opacity var(--transition);
-
-    @include mobile {
-      font-size: 14px;
-    }
-
-    &:hover {
-      opacity: 0.9;
-    }
-  }
+.btn-primary {
+	background-color: var(--default-primary);
+	border: 0;
+}
+.btn-primary:hover {
+	background-color: var(--hover-primary);
 }

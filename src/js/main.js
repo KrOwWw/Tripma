@@ -1,20 +1,5 @@
-import '/scss/main.scss';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap';
 
-// components
-import { hideHeader } from './components/hideHeader.js';
-import { useTheme } from './components/theme.js';
-import { useBurger } from './components/burger.js';
-import {
-  usePartnersSlider,
-  useInsightSlider,
-  useTestimonialsSlider,
-} from './components/home/slider.js';
-import { useAccordion } from './components/accordion.js';
-
-hideHeader();
-useTheme();
-useBurger();
-usePartnersSlider();
-useInsightSlider();
-useTestimonialsSlider();
-useAccordion();
+import '../scss/main.scss';
+import './components/banner.js';

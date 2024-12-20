@@ -1,0 +1,28 @@
+.banner {
+	position: relative;
+	height: 64px;
+	width: 100%;
+
+	transition: all 0.2s;
+}
+
+.hidden {
+	opacity: 0;
+	height: 0;
+}
+
+.banner-close {
+	position: absolute;
+	top: 20px;
+	right: 65px;
+	// height: 16px;
+
+	background-color: transparent;
+	border: 0;
+
+	color: #fff;
+}
+
+.banner-close svg path {
+	height: 16px;
+}
