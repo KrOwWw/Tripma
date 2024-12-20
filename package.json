@@ -19,6 +19,7 @@
     "vite": "^6.0.3",
     "vite-plugin-eslint": "^1.8.1",
     "vite-plugin-image-optimizer": "^1.1.8",
+    "vite-plugin-inject-html": "^1.0.5",
     "vite-plugin-minify": "^2.1.0"
   },
   "dependencies": {
