@@ -1,0 +1,10 @@
+@import './mixins';
+@import './base';
+@import './globals';
+
+//components
+@import './components/header';
+@import './components/AWS-Services/hero';
+@import './components/AWS-Services/blog';
+@import './components/AWS-Services/developer';
+@import './components/footer';

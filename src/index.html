@@ -1,13 +1,19 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+  <load src="./html/base/head.html" title="Home" />
+
+  <body class="body" data-theme="light">
+    <load src="./html/components/header.html" title="Home" />
+
+    <load src="./html/components/home/hero.html" />
+    <load src="./html/components/home/overview.html" />
+    <load src="./html/components/home/features.html" />
+    <load src="./html/components/home/strength.html" />
+    <load src="./html/components/partners.html" />
+    <load src="./html/components/home/insight.html" />
+    <load src="./html/components/home/testimonials.html" />
+
+    <load src="./html/components/footer.html" />
+    <script type="module" src="./js/main.js"></script>
   </body>
 </html>

@@ -1,0 +1,118 @@
+.articles {
+  padding: 175px 0 150px;
+
+  @include small-tablet {
+    padding: 100px 0 80px;
+  }
+
+  &__top {
+    @include flex-all-between;
+  }
+
+  &__content {
+    &-title {
+      font-weight: 600;
+      line-height: 120%;
+      letter-spacing: -0.04em;
+      color: var(--neutral-color-100);
+      padding-bottom: 35px;
+    }
+
+    &-info {
+      font-weight: 500;
+      line-height: 178%;
+      color: var(--neutral-color-150);
+      padding-bottom: 80px;
+      max-width: 435px;
+    }
+  }
+
+  &__slider {
+    height: 1160px;
+
+    @include tablet {
+      height: 900px;
+    }
+
+    @include small-tablet {
+      height: 1000px;
+    }
+  }
+
+  &__btns {
+    @include flex-align-center;
+    justify-content: flex-end;
+    gap: 16px;
+    transform: translateY(-40px);
+
+    @include mini-desktop {
+      transform: translateY(5px);
+    }
+  }
+
+  &__btn {
+    @include flex-all-center;
+    border: 1px solid var(--neutral-color-40);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    transition:
+      background-color var(--transition),
+      border-color var(--transition);
+
+    @include small-mobile {
+      width: 40px;
+      height: 40px;
+    }
+
+    & svg path {
+      transition: fill var(--transition);
+    }
+
+    &:hover {
+      background-color: var(--neutral-color-100);
+      border-color: var(--neutral-color-100);
+
+      & svg path {
+        fill: var(--neutral-color-10);
+      }
+    }
+    &--next {
+      transform: rotate(-180deg);
+    }
+  }
+
+  &__article {
+    max-width: 400px;
+
+    &-title {
+      max-width: 400px;
+      font-weight: 600;
+      line-height: 131%;
+      letter-spacing: -0.03em;
+      color: var(--neutral-color-100);
+      padding: 30px 0 30px;
+    }
+
+    &-text {
+      max-width: 400px;
+      font-weight: 500;
+      line-height: 178%;
+      color: var(--neutral-color-150);
+      padding-bottom: 25px;
+    }
+
+    &-link {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 150%;
+      text-align: center;
+      color: var(--neutral-color-100);
+      border: 1px solid #ced1d8;
+      border-radius: 100px;
+      padding: 16px 32px;
+      width: 175px;
+      height: 56px;
+    }
+  }
+}
